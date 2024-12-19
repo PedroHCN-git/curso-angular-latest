@@ -1,1 +1,22 @@
-<p>data-biding works!</p>
+<h2>Propert Bynding</h2>
+<button [disabled]="checkeDisable">Disable</button>
+
+<br>
+<br>
+
+<hr>
+
+<h2>Event binding</h2>
+<button (click)="alertaInfo($event)">Evento</button>
+
+<br>
+<br>
+
+<div (mousemove)="moveMouseTest($event)" style="background-color: red; width: 300px; height: 200px"></div>
+{{position.x}} - {{position.y}}
+
+<br>
+<br>
+
+<input [(ngModel)]="nome">
+{{nome}}

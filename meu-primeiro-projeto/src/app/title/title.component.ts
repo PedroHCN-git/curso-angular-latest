@@ -3,6 +3,7 @@ import { Component, OnChanges, OnInit, Input, SimpleChanges } from '@angular/cor
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
+  styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit, OnChanges {
 
@@ -14,7 +15,7 @@ export class TitleComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(): void {
-    alert("foi alterado com sucesso")
+    // alert("foi alterado com sucesso")
   }
 
 }
