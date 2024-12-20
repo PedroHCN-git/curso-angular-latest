@@ -7,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
 
+  public height:string = "20px"
   public valor: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
+    setInterval(() => {
+      if(this.height == "20px")
+        this.height = "50px"
+      else
+        this.height = "20px"
+    }, 2000);
   }
 
   public switchOnOf(): void{

@@ -4,3 +4,7 @@
 <ng-template #elseBlock><button (click)="switchOnOf()">Switch On</button></ng-template>
 
 <div [ngClass]="'first second'">Div</div>
+
+<hr>
+
+<p [ngStyle]="{'active': valor, 'disabled': !valor }">NgClass</p>
