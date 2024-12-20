@@ -12,3 +12,18 @@
 <button (click)="onClick()">Clicar</button>
 <br>
 <br>
+
+<hr>
+
+<ul>
+    <li *ngFor="let item of list, let i = index" (click)="onClickListEvent(i)">[{{i}}] - {{item.nome}} - {{item.idade}} anos</li>
+</ul>
+<button (click)="addOnClick()">Add</button>
+
+<br>
+<br>
+
+<ul>
+    <li *ngFor="let item of twainNumbers, let i = index, first as isFirst">{{item.n}} <span *ngIf="isFirst">default</span></li>
+</ul>
+
