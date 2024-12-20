@@ -1,0 +1,6 @@
+<p [ngClass]="{'active': valor, 'disabled': !valor }">NgClass</p>
+
+<button *ngIf="valor, else elseBlock" (click)="switchOnOf()">Switch Of</button>
+<ng-template #elseBlock><button (click)="switchOnOf()">Switch On</button></ng-template>
+
+<div [ngClass]="'first second'">Div</div>
