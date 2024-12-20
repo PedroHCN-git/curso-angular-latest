@@ -13,6 +13,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
     {nome: "Leandro Pereira", idade: 47}
   ];
 
+  public name: String = "Pedro";
   public value:boolean = false;
   public twainNumbers: Array<{n: number}> = [{n: 1}, {n:2}, {n:5}, {n:8}, {n:3}];
   public conditionClick = true;
@@ -53,5 +54,9 @@ export class DiretivasEstruturaisComponent implements OnInit {
     else{
       this.value = false;
     }
+  }
+
+  public changeName(event: MouseEvent, name: String): void{
+    this.name = name;
   }
 }

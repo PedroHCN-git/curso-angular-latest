@@ -27,3 +27,12 @@
     <li *ngFor="let item of twainNumbers, let i = index, first as isFirst">{{item.n}} <span *ngIf="isFirst">default</span></li>
 </ul>
 
+<hr>
+
+<div [ngSwitch]="name">
+  <p *ngSwitchCase="'Pedro'"> Seu nome é Pedro</p>
+  <p *ngSwitchCase="'Denner'"> Seu nome é Denner</p>
+</div>
+
+<button (click)="changeName($event, 'Denner')">Trocar nome</button>
+

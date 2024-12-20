@@ -1,0 +1,16 @@
+Ciclo de vida
+
+ngDoCheck() - Esse ciclo é invocado sempre que as propriedades de entrada de um componente são verificadas
+
+ngAfterContentInit() - Esse ciclo é invocado quando o angular realiza qualquer projeção de conteúdo nas visualizações do componente
+
+ngAfterContentChecked() - Esse ciclo é invocado sempre que o angular verifica o conteúdo de um componente
+
+ngAfterViewInit() - Esse ciclo é invocado sempre que a visualização do componente for totalmente inicializada
+
+ngAfterViewChecked - Esse ciclo é invocado toda vez que a visualização de um determinado componente for verificada pelo algoritimo de detectção de alteração do angular
+
+
+
+
+
