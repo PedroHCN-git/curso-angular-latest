@@ -3,7 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <app-diretivas-atributos></app-diretivas-atributos>
+  <app-diretivas-atributos>
+    <hr>
+    <h1>Denner é insuportável e burro</h1>
+  </app-diretivas-atributos>
   <router-outlet></router-outlet>
   `
 })

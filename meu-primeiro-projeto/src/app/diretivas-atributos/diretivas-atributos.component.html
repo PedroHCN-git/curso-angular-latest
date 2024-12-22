@@ -15,6 +15,7 @@
 <button (click)="addName()">salvar</button>
 
 <li *ngFor="let item of list">{{item.nome}}</li> -->
+<ng-content select="h1"></ng-content>
 
 <ng-template #myTemplate let-name="name">
     <p>{{name}}</p>
@@ -24,3 +25,5 @@
 <br>
 
 <div *ngTemplateOutlet="myTemplate; context: {name: 'Pedro'}"></div>
+
+<ng-content select="hr"></ng-content>
