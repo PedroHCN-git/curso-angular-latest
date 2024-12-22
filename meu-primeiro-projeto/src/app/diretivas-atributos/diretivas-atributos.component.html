@@ -8,3 +8,10 @@
 <hr>
 
 <p [ngStyle]="{'active': valor, 'disabled': !valor }">NgClass</p>
+
+<hr>
+
+<input [(ngModel)]="valorNg">
+<button (click)="addName()">salvar</button>
+
+<li *ngFor="let item of list">{{item.nome}}</li>

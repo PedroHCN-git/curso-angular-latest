@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
 
+  public list:Array<{nome: String}> = [];
+  public valorNg: String = "";
   public height:string = "20px"
   public valor: boolean = true;
 
@@ -26,6 +28,10 @@ export class DiretivasAtributosComponent implements OnInit {
       this.valor = false;
     else
       this.valor = true;
+  }
+
+  public addName(): void{
+    this.list.push({nome: this.valorNg});
   }
 
 }
