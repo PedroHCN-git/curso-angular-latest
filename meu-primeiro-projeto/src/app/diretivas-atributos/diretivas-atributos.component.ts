@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
 
+  public cont: number = 0;
   public list:Array<{nome: String}> = [];
   public valorNg: String = "";
   public height:string = "20px"
