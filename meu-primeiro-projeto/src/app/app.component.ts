@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <app-diretivas-atributos>
-    <hr>
-    <h1>Denner é insuportável e burro</h1>
-  </app-diretivas-atributos>
-  <app-new-component></app-new-component>
+  <ng-template [ngIf]="getDados">
+    {{getDados.name}}
+    {{getDados.idade}}
+  </ng-template>
+  <app-output (enviarDados)="setDados($event)"></app-output>
   <router-outlet></router-outlet>
   `
 })
@@ -17,10 +17,18 @@ export class AppComponent implements OnInit{
 
   }
 
+  public getDados: {name: string, idade: number} | undefined;
+
+  public addValue: number = 10;
+
   public destruir:boolean = true;
 
   ngOnInit(): void {
     // setTimeout(()=> {console.log(1)}, 5000)
+  }
+
+  public setDados(event: {name: string, idade: number}): void{
+    this.getDados = event;
   }
 
 }
