@@ -5,6 +5,7 @@ import { InputComponent } from './input/input.component';
 import { OutputComponent } from './output/output.component';
 import { FoodAddComponent } from './food-add/food-add.component';
 import { FoodListComponent } from './food-list/food-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -18,6 +19,7 @@ import { FoodListComponent } from './food-list/food-list.component';
   ],
   imports: [
     CommonModule,
+    FormsModule
   ],
   exports: [
     NewComponentComponent, 
