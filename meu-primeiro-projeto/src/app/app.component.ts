@@ -3,11 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <ng-template [ngIf]="getDados">
+  <!-- <ng-template [ngIf]="getDados">
     {{getDados.name}}
     {{getDados.idade}}
-  </ng-template>
-  <app-output (enviarDados)="setDados($event)"></app-output>
+  </ng-template> 
+  <app-output (enviarDados)="setDados($event)"></app-output> -->
+  <app-food-add></app-food-add>
+  <app-food-list></app-food-list>
   <router-outlet></router-outlet>
   `
 })
