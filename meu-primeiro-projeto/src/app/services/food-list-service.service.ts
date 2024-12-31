@@ -21,8 +21,8 @@ export class FoodListServiceService {
   }
 
   public addFoodToList(food: string): void{
+    this.foodListAllert(food);
     this.foodList.push(food);
-
   }
 
   public foodListAllert(value: string){
