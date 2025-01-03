@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import { SharedModule } from './shared/shared.module';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SharedModule } from './shared/shared.module';
     TitleComponent,
     DataBidingComponent,
     DiretivasEstruturaisComponent,
-    DiretivasAtributosComponent
+    DiretivasAtributosComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
