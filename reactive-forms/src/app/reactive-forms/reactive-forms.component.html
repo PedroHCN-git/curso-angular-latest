@@ -1,14 +1,19 @@
 <form [formGroup]="cadastroForm" (ngSubmit)="submiteForm()">
-    <input type="text" formControlName="firstName">
+    <label>
+        Nome:
+        <input type="text" formControlName="firstName">
+    </label>
+    <span *ngIf="cadastroForm.get('firstName')?.errors && (cadastroForm.get('firstName')?.touched || cadastroForm.get('firstName')?.dirty)">Nome é um campo obrigatório</span>
     <br>
-    <input type="text" formControlName="lastName">
     <br>
-    <p>
-        {{cadastroForm.get('firstName')?.value}}
-    </p>
-    <p>
-        {{cadastroForm.get('lastName')?.value}}
-    </p>
+    <label>
+        Sobrenome:
+        <input type="text" formControlName="lastName">
+    </label>
+    <br>
     <br>
     <button type="submit">Enviar</button>
+    {{cadastroForm.get('firstName')?.valid}}
+    {{cadastroForm.get('firstName')?.touched}}
+    {{cadastroForm.get('firstName')?.dirty}}
 </form>
